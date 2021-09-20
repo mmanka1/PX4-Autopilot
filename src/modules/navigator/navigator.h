@@ -309,6 +309,13 @@ public:
 
 	void		acquire_gimbal_control();
 	void		release_gimbal_control();
+	void 		set_group_start(uint32_t id);
+	void 		set_group_end(uint32_t id);
+
+	/**
+	 * Publish the mission result so commander and mavlink know what is going on
+	 */
+	void		publish_mission_result();
 
 private:
 	DEFINE_PARAMETERS(
@@ -434,11 +441,6 @@ private:
 	 * Publish a new position setpoint triplet for position controllers
 	 */
 	void		publish_position_setpoint_triplet();
-
-	/**
-	 * Publish the mission result so commander and mavlink know what is going on
-	 */
-	void		publish_mission_result();
 
 	void		publish_vehicle_command_ack(const vehicle_command_s &cmd, uint8_t result);
 };

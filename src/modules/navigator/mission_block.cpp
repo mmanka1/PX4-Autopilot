@@ -110,6 +110,13 @@ MissionBlock::is_mission_item_reached()
 	case NAV_CMD_SET_CAMERA_FOCUS:
 		return true;
 
+	case NAV_CMD_GROUP_START:
+		_navigator->set_group_start(_mission_item.params[0]);
+		return true;
+	case NAV_CMD_GROUP_END:
+		_navigator->set_group_end(_mission_item.params[0]);
+		return true;
+
 	case NAV_CMD_DO_VTOL_TRANSITION:
 
 		if (int(_mission_item.params[0]) == 3) {
