@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# @name 3DR Iris Quadrotor SITL (Obstacle Avoidance and Lidar Scan Analysis)
+#
+# @type Quadrotor Wide
+#
+
+. ${R}etc/init.d-posix/airframes/10016_iris

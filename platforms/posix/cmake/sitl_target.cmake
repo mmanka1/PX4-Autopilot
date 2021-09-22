@@ -110,6 +110,7 @@ set(models
 	iris_dual_gps
 	iris_foggy_lidar
 	iris_irlock
+	iris_multi_lidar
 	iris_obs_avoid
 	iris_opt_flow
 	iris_opt_flow_mockup

@@ -37,6 +37,7 @@ rtps:
     id: 16
   - msg: distance_sensor
     id: 17
+    send: true
   - msg: estimator_innovations
     id: 18
   - msg: ekf2_timestamps
@@ -341,6 +342,9 @@ rtps:
     id: 158
   - msg: estimator_event_flags
     id: 159
+  - msg: lidar_scan
+    id: 160
+    send: true
   ########## multi topics: begin ##########
   - msg: actuator_controls_0
     id: 180
