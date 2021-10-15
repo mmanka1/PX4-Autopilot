@@ -124,4 +124,4 @@ A high level project roadmap is available [here](https://github.com/orgs/PX4/pro
 ## Additions
 
 * As of September 2021, Added lidar scan message and multi 360 degree horizontal coverage lidar model
-* As of October 2021, Added new lidar model - based on libgazebo_ros_ray_sensor.so - to capure and publish  detailed laser information
+* As of October 2021, Added new lidar model - based on libgazebo_ros_ray_sensor.so - to capture and publish  detailed laser information
